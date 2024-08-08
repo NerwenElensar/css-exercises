@@ -1,6 +1,12 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+
+  /* add flex to center items and push links to both sides. add padding for space */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
 }
 
 .logo {
@@ -14,6 +20,14 @@
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+
+  /* remove margin and padding to neutralise */
+  margin: 0;
+  padding: 0;
+
+  /* add flexbox to make li flex items and gap to have space between items */
+  display: flex;
+  gap: 12px;
 }
 
 a {
